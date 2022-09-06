@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  /* background-color: aqua; */
+}
+.post {
+  width: 32%;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.post > h2 {
+  margin-bottom: 1rem;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.spinner {
+  width: 75px;
+  height: 75px;
+  border: 15px solid rgb(128, 200, 128);
+  border-top-color: green;
+  margin: 50px auto;
+  border-radius: 50%;
+  animation: loader 1s infinite linear;
+}
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
